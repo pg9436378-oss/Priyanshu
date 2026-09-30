@@ -1,0 +1,14 @@
+{
+  "name": "Priyanshu Multi-Model Agent",
+  "version": "1.0.0",
+  "description": "A secure multi-model AI agent architecture for the Priyanshu project.",
+  "providers": {
+    "openai": {"enabled": true, "apiKeyEnv": "OPENAI_API_KEY"},
+    "google": {"enabled": true, "apiKeyEnv": "GOOGLE_API_KEY"},
+    "anthropic": {"enabled": true, "apiKeyEnv": "ANTHROPIC_API_KEY"},
+    "groq": {"enabled": true, "apiKeyEnv": "GROQ_API_KEY"},
+    "huggingface": {"enabled": true, "apiKeyEnv": "HF_TOKEN"}
+  },
+  "features": ["model-selection", "chat", "tool-routing", "project-context", "safe-secret-handling"],
+  "defaultProvider": "openai"
+}
